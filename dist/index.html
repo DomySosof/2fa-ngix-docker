@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <!-- Toggle Dark Mode -->
+            <div class="flex justify-end mb-6">
+                <input type="checkbox" id="toggleMode">
+                <label for="toggleMode" class="toggle-label">
+                    <span id="sunIcon" class="text-yellow-500 text-lg hidden">☀️</span>
+                    <span id="moonIcon" class="text-gray-500 text-lg">🌙</span>
+                    <div class="toggle-circle"></div>
+                </label>
+            </div>
+
+            <!-- Title -->
+            <h1 class="title">Aplicaciones</h1>
+
+            <!-- Icon Grid -->
+            <div class="grid" id="iconContainer"></div>
+        </div>
+
+        <!-- Details Modal -->
+        <div id="detailsContainer" class="dialog hidden">
+            <div class="dialog-content">
+                <div id="detailsContent"></div>
+                <button id="closeDetailsButton" class="close-button">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- QR Code Dialog -->
+        <div id="viewDialog" class="dialog hidden">
+            <div class="dialog-content">
+                <p class="dialog-title">Escanéame</p>
+                <div id="qrcode" class="qr-container"></div>
+                <button id="copyTextButton" class="copy-button">Copiar Texto</button>
+                <button id="closeDialogButton" class="close-button">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
