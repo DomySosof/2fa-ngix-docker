@@ -1,3 +1,9 @@
+
+```
+git clone https://github.com/DomySosof/2fa-ngix-docker.git
+```
+
+
 # install
 
 ```
