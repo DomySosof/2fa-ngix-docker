@@ -3,6 +3,9 @@
 git clone https://github.com/DomySosof/2fa-ngix-docker.git
 ```
 
+```
+cd 2fa-ngix-docker
+```
 
 # install
 
